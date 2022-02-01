@@ -4,7 +4,7 @@ const core = require("@actions/core");
 try {
     const appInsightKey = core.getInput("appInsightKey");
     const vscodeChoreoUserEmail = core.getInput("vscodeChoreoUserEmail")
-    const vscodeChoreoUserIdpId = core.getInput("vscodeChoreoUserEmail")
+    const vscodeChoreoUserIdpId = core.getInput("vscodeChoreoUserIdpId")
 
     AppInsights.setup(appInsightKey)
         .setAutoDependencyCorrelation(true)
