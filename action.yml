@@ -1,0 +1,11 @@
+name: Choreo App Insight
+description: Send app-insight events when a user commits and pushes something from the code editor.
+author: WSO2
+branding:
+  icon: 'arrow-up-circle'
+  color: 'orange'
+inputs:
+  
+runs:
+  using: node16
+  main: index.js
