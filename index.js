@@ -1,6 +1,6 @@
 const AppInsights = require("applicationinsights");
 
-const key = "e7703a9d-bb5c-4e3a-b4e3-05c773fd87d1";
+const key = process.env.APP_INSIGHT_KEY;
 
 AppInsights.setup(key)
     .setAutoDependencyCorrelation(true)
