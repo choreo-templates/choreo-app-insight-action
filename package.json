@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Choreo App Insight GitHub Action",
   "main": "index.js",
-  "repository": "https://github.com/wso2-enterprise/choreo-app-insight-action.git",
+  "repository": "https://github.com/choreo-templates/choreo-app-insight-action.git",
   "author": "Chamod Perera <chamodp@wso2.com>",
   "license": "MIT",
   "private": true,
