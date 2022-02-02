@@ -6,6 +6,21 @@ try {
     const vscodeChoreoUserEmail = core.getInput("vscodeChoreoUserEmail")
     const vscodeChoreoUserIdpId = core.getInput("vscodeChoreoUserIdpId")
 
+    if (!appInsightKey) {
+        console.log("App Insights Key has not been set. Skipping App Insights setup.");
+        throw new Error("App Insights Key has not been set. Skipping App Insights setup.");
+    }
+
+    if (!vscodeChoreoUserEmail) {
+        console.log("VSCode Choreo User Email has not been set. Skipping App Insights setup.");
+        throw new Error("VSCode Choreo User Email has not been set. Skipping App Insights setup.");
+    }
+
+    if (!vscodeChoreoUserIdpId) {
+        console.log("VSCode Choreo User Idp Id has not been set. Skipping App Insights setup.");
+        throw new Error("VSCode Choreo User Idp Id has not been set. Skipping App Insights setup.");
+    }
+
     AppInsights.setup(appInsightKey)
         .setAutoDependencyCorrelation(true)
         .setAutoCollectRequests(true)
