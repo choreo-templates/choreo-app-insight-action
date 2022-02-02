@@ -35,6 +35,7 @@ try {
         },
     };
     AppInsightsClient.trackEvent(eventObject);
+    console.log("Event tracked");
 } catch (e) {
     core.setOutput("choreo-app-insight-status", "failed");
     core.setFailed(e.message);
