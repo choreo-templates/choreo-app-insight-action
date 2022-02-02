@@ -5,7 +5,15 @@ branding:
   icon: 'arrow-up-circle'
   color: 'orange'
 inputs:
-  
+  appInsightKey:
+    required: true
+    description: The Azure app-insight key
+  vscodeChoreoUserEmail:
+    required: true
+    description: The email of the user who is committing
+  vscodeChoreoUserIdpId:
+    required: true
+    description: The IDP ID of the user who is committing
 runs:
   using: node16
   main: index.js
