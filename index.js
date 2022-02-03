@@ -40,7 +40,7 @@ try {
         : false;
 
     const eventObject = {
-        name: "editor-workspace-git-push",
+        name: "wso2.ballerina/editor-workspace-git-push",
         properties: {
             scope: "git-push",
             idpId: vscodeChoreoUserIdpId
